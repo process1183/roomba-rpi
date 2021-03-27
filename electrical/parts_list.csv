@@ -1,0 +1,35 @@
+"Schematic Part Number",Part,Quantity,"Product URL"
+A1,"UBEC DC/DC Step-Down (Buck) Converter - 5V @ 3A output",1,https://www.adafruit.com/product/1385
+A2,"Adafruit CP2104 Friend - USB to Serial Converter",1,https://www.adafruit.com/product/3309
+A3,"Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout - BNO055",1,https://www.adafruit.com/product/2472
+A4,"Adafruit DS3231 Precision RTC Breakout",1,https://www.adafruit.com/product/3013
+SW1,"Tactile Button switch (6mm)",1,https://www.adafruit.com/product/367
+R1,"10K ohm 1/4W PTH Resistor",1,https://www.adafruit.com/product/2784
+J1,"JST XH-4P-F",1,https://smile.amazon.com/gp/product/B01MCZE2HM/
+J2,"JST XH-4P-M",1,https://smile.amazon.com/gp/product/B01MCZE2HM/
+J3,"1x2 Female Polarized Connector",1,https://www.sparkfun.com/products/8095
+J4,"1x2 Male Polarized Connector",1,https://www.sparkfun.com/products/8233
+J5,"1x6-Pin 2.54mm Crimp Connector Housing",1,https://www.pololu.com/product/1905
+J6,"1x6-Pin Right Angle 2.54mm Male Header",1,https://www.adafruit.com/product/1540
+"J7, J12, J13","DIY USB MicroB Connector",3,https://www.adafruit.com/product/1826
+"J8, J9, J10, J11","2x2-Pin 2.54mm Crimp Connector Housing",4,https://www.pololu.com/product/1910
+J14,"Raspberry Pi Zero W",1,https://www.adafruit.com/product/3400
+J15,"JST XH-5P-F",1,https://smile.amazon.com/gp/product/B01MCZE2HM/
+J16,"JST XH-5P-M",1,https://smile.amazon.com/gp/product/B01MCZE2HM/
+J17,"1x3-Pin 2.54mm Female Header",1,https://www.pololu.com/product/1013
+,"JST XH 2.54mm Female Crimp Pins",9,https://smile.amazon.com/gp/product/B01MCZE2HM/
+,"Female Crimp Pins for 2.54mm Housings",11,https://www.pololu.com/product/1930
+,"Male Crimp Pins for 2.54mm Housings",8,https://www.pololu.com/product/1931
+,"Polarized Connector Crimp Pins",2,https://www.sparkfun.com/products/8100
+,"Proto-Board PCB",1,https://www.sparkfun.com/products/8619
+,"DIY low-profile Roomba OI/serial connector",1,
+,"Stranded-Core Wire - 26AWG Black",,https://www.adafruit.com/product/1881
+,"Stranded-Core Wire - 26AWG Red",,https://www.adafruit.com/product/1877
+,"Stranded-Core Wire - 26AWG Green",,https://www.adafruit.com/product/1880
+,"Stranded-Core Wire - 26AWG Yellow",,https://www.adafruit.com/product/1879
+,"Stranded-Core Wire - 30AWG Red",,https://www.adafruit.com/product/2001
+,"Stranded-Core Wire - 30AWG Blue",,https://www.adafruit.com/product/2002
+,"Stranded-Core Wire - 30AWG Black",,https://www.adafruit.com/product/2003
+,"Stranded-Core Wire - 30AWG Yellow",,https://www.adafruit.com/product/2004
+,"Stranded-Core Wire - 30AWG Green",,https://www.adafruit.com/product/2005
+,"Stranded-Core Wire - 30AWG White",,https://www.adafruit.com/product/2006
