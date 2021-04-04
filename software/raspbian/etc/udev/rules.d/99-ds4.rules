@@ -1,0 +1,5 @@
+## Set custom LED bar color for the DualShock 4 controller ##
+## Replace 00:00:00:00:00:00 with the (lowercase) MAC address of your 
+## controller and change 0x008000 to whatever HTML color code you want, 
+## then uncomment the line below.
+#ACTION=="add" SUBSYSTEM=="input" ATTRS{uniq}=="00:00:00:00:00:00" RUN+="/opt/set_ds4_led_color.sh %p 0x008000"
