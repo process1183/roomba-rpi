@@ -1,0 +1,17 @@
+{
+    "control_map": {
+        "auto_clean": "BTN_EAST",
+        "cleaning_motor_set_toggle": "BTN_SOUTH",
+        "cleaning_motor_speed": "ABS_RZ",
+        "restart_oi": "BTN_WEST",
+        "seek_dock": "BTN_NORTH",
+        "wheel_full_speed": "BTN_TL",
+        "wheel_left": "ABS_Y",
+        "wheel_right": "ABS_RY"
+    },
+    "drive_axis_deadband": 20,
+    "invert_axis_list": [
+        "ABS_Y",
+        "ABS_RY"
+    ]
+}

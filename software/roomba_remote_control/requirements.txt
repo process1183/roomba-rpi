@@ -1,0 +1,2 @@
+evdev >= 1.4.0
+pyroombaadapter >= 0.1.3
