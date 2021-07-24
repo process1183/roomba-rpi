@@ -187,6 +187,10 @@ def process_events(options: dict,
             logging.debug(evdev.categorize(ev))
             logging.info("Restarting ROI...")
 
+            # Roomba automatically turns off cleaning motors when ROI is restarted,
+            # so update the cleaning_motors.running state to reflect this.
+            cleaning_motors.running = False
+
             roomba.change_mode_to_passive()
             time.sleep(1)
             if options["cli_args"]["unsafe"]:
