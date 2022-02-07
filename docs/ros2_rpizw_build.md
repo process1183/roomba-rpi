@@ -282,7 +282,7 @@ _Note_: Replace `<RPI_IP>` with your Raspberry Pi Zero W's IP address.
 ```
 mkdir /opt/rootfs
 
-rsync -rLR --safe-links <RPI_IP>:/{etc,lib,opt,usr} /opt/rootfs/
+rsync -rLR --safe-links <RPI_IP>:/{etc,lib,usr} /opt/rootfs/
 ```
 
 __5.__ __(Deb10 Build Env)__ Create `/opt/toolchain.cmake` with the following contents:
