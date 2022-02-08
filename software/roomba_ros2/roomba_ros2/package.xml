@@ -2,9 +2,9 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>roomba_ros2</name>
-  <version>0.1</version>
+  <version>0.1.0</version>
   <description>ROS2 packages for Roomba RPi</description>
-  <maintainer email="josh@steelcaverobotics.com">Josh Gadeken</maintainer>
+  <maintainer email="ros@steelcaverobotics.com">Josh Gadeken</maintainer>
   <license>GNU General Public License version 3</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
