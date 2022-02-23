@@ -1,17 +1,20 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>roomba_ros2</name>
+  <name>roomba_bringup</name>
   <version>0.1.0</version>
-  <description>ROS2 packages for Roomba RPi</description>
+  <description>Roomba RPi ROS2 launch files</description>
   <maintainer email="ros@steelcaverobotics.com">Josh Gadeken</maintainer>
   <license>GNU General Public License version 3</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>roomba_bringup</exec_depend>
-  <exec_depend>ros2_bno055</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
   <exec_depend>create_driver</exec_depend>
+  <exec_depend>ros2_bno055</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

@@ -5,6 +5,7 @@
 | Package Name | Description |
 | ------------ | ----------- |
 | `roomba_ros2` | Roomba RPi ROS2 metapackage |
+| `roomba_bringup` | Roomba RPi ROS2 launch files |
 
 
 ## Additional Required ROS Packages ##
