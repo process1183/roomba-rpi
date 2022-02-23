@@ -4,7 +4,7 @@
 
 | Package Name | Description |
 | ------------ | ----------- |
-| `roomba_ros2`| Roomba RPi ROS2 Metapackage |
+| `roomba_ros2` | Roomba RPi ROS2 metapackage |
 
 
 ## Additional Required ROS Packages ##
@@ -32,6 +32,9 @@ sudo chown -R ${USER}:${USER} /opt/rws/
 __2.__ __(RPi ZW)__ Clone the needed package sources:
 
 ```
+git clone https://github.com/process1183/roomba-rpi.git ~/roomba-rpi
+cp -r ~/roomba-rpi/software/roomba_ros2 /opt/rws/src/
+
 cd /opt/rws/src
 
 git clone https://github.com/process1183/ros2_bno055.git
