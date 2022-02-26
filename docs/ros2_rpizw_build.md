@@ -10,7 +10,7 @@ for the reasoning behind these instructions.
 
 To build ROS2 for the RPi ZW, you will need a Debian 10 build environment
 (I recommend using a schroot, container, or virtual machine), and a Raspberry 
-Pi Zero W with the Raspberry Pi OS installed.
+Pi Zero W with the Raspberry Pi OS (Legacy, Debian 10 Buster) installed.
 
 
 ## Building the Cross-Compilation Toolchain ##
