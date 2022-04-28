@@ -8,13 +8,13 @@
 | `roomba_bringup` | Roomba RPi ROS2 launch files |
 
 
-## Additional Required ROS Packages ##
+## Additional Required ROS2 Packages ##
 
 | Package Name | Description | URL |
 | ------------ | ----------- | --- |
 | `ros2_bno055` | ROS2 node for the Bosch BNO055 IMU | [github.com/process1183/ros2_bno055](https://github.com/process1183/ros2_bno055) |
-| `create_driver` | ROS driver for iRobot Create 1 and 2. | [github.com/process1183/create_robot/tree/mode_report_workaround](https://github.com/process1183/create_robot/tree/mode_report_workaround) |
-| `libcreate` | C++ library for interfacing with iRobot's Create 1 and 2 as well as most models of Roomba. (Dependency of `create_driver`) | [github.com/process1183/libcreate/tree/mode_report_workaround](https://github.com/process1183/libcreate/tree/mode_report_workaround) |
+| `create_driver` | ROS driver for iRobot Create 1 and 2. | [github.com/AutonomyLab/create_robot](https://github.com/AutonomyLab/create_robot/tree/foxy) |
+| `libcreate` | C++ library for interfacing with iRobot's Create 1 and 2 as well as most models of Roomba. (Dependency of `create_driver`) | [github.com/AutonomyLab/libcreate](https://github.com/AutonomyLab/libcreate) |
 | `diagnostics` | Packages related to gathering, viewing, and analyzing diagnostics data from robots. (Dependency of `create_driver`) | [github.com/ros/diagnostics](https://github.com/ros/diagnostics) |
 
 
@@ -39,8 +39,8 @@ cp -r ~/roomba-rpi/software/roomba_ros2 /opt/rws/src/
 cd /opt/rws/src
 
 git clone https://github.com/process1183/ros2_bno055.git
-git clone https://github.com/process1183/create_robot.git --branch mode_report_workaround
-git clone https://github.com/process1183/libcreate.git --branch mode_report_workaround
+git clone https://github.com/AutonomyLab/create_robot.git --branch foxy
+git clone https://github.com/AutonomyLab/libcreate
 git clone https://github.com/ros/diagnostics.git --branch foxy
 ```
 
@@ -65,7 +65,7 @@ __4.__ __(RPi ZW)__ Source the ROS2 setup file:
 source /opt/ros2_foxy/install/local_setup.bash
 ```
 
-__5.__ __(RPi ZW)__ Install ROS package dependencies:
+__5.__ __(RPi ZW)__ Install ROS2 package dependencies:
 
 ```
 cd /opt/rws
