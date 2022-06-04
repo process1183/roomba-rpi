@@ -1,0 +1,8 @@
+/create_driver:
+  ros__parameters:
+    baud: 115200
+    dev: /dev/ttyUSB0
+    odom_frame: roomba_odom
+    oi_mode_workaround: true
+    publish_tf: true
+    robot_model: CREATE_2

@@ -17,19 +17,26 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
+import os
+
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
+    config = os.path.join(
+            get_package_share_directory("roomba_bringup"),
+            "config",
+            "roomba.yaml"
+        )
+
     return LaunchDescription([
         Node(
             package="create_driver",
             executable="create_driver",
             name="create_driver",
-            parameters=[{
-                "oi_mode_workaround": True,
-            }]
+            parameters=[config]
         ),
         Node(
             package="ros2_bno055",
