@@ -1,5 +1,9 @@
 # Building ROS2 Foxy Fitzroy for the RPi Zero W #
 
+__Deprecation Notice: This document is now obsolete because the Roomba's RPi has
+been upgraded to the Raspberry Pi Zero 2, Raspbian 11 (arm64), and ROS2 Galactic.
+See the [Upgrades project log](https://hackaday.io/project/178565-roomba-rpi/log/206959-upgrades)__
+
 This document contains the steps needed to set up a cross-compilation environment
 and build [ROS 2 Foxy Fitzroy](https://docs.ros.org/en/foxy/index.html) for the
 Raspberry Pi Zero W.
