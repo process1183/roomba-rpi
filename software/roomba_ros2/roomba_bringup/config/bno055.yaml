@@ -1,0 +1,4 @@
+/bno055/bno055:
+  ros__parameters:
+    axis_remap: P1
+    frame_id: imu

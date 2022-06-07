@@ -21,26 +21,44 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    config = os.path.join(
+    roomba_config = os.path.join(
             get_package_share_directory("roomba_bringup"),
             "config",
             "roomba.yaml"
         )
+    bno055_config = os.path.join(
+            get_package_share_directory("roomba_bringup"),
+            "config",
+            "bno055.yaml"
+        )
 
     return LaunchDescription([
+        DeclareLaunchArgument(
+            "roomba_config_file",
+            default_value=roomba_config,
+            description="Roomba configuration file"
+        ),
+        DeclareLaunchArgument(
+            "bno055_config_file",
+            default_value=bno055_config,
+            description="BNO055 configuration file"
+        ),
         Node(
             package="create_driver",
             executable="create_driver",
             name="create_driver",
-            parameters=[config]
+            parameters=[LaunchConfiguration("roomba_config_file")]
         ),
         Node(
             package="ros2_bno055",
             executable="bno055",
-            name="bno055"
+            name="bno055",
+            parameters=[LaunchConfiguration("bno055_config_file")]
         ),
     ])
