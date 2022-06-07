@@ -1,0 +1,56 @@
+# PlayStation 4 DualShock 4 Controller
+
+joy_node:
+  ros__parameters:
+    deadzone: 0.1
+
+
+joy_teleop:
+  ros__parameters:
+    drive:
+      type: topic
+      topic_name: cmd_vel
+      interface_type: geometry_msgs/msg/Twist
+      deadman_buttons: [4]  # L1
+      axis_mappings:
+        linear-x:
+          axis: 1  # Left stick up/down
+          scale: 0.5
+          offset: 0.0
+        angular-z:
+          axis: 3  # Right stick left/right
+          scale: 4.25
+          offset: 0.0
+
+    main_brush_motor:
+      type: topic
+      topic_name: main_brush_motor
+      interface_type: create_msgs/msg/MotorSetpoint
+      deadman_buttons: [4]  # L1
+      axis_mappings:
+        duty_cycle:
+          button: 5  # R1
+          scale: 1.0
+          offset: 0.0
+
+    side_brush_motor:
+      type: topic
+      topic_name: side_brush_motor
+      interface_type: create_msgs/msg/MotorSetpoint
+      deadman_buttons: [4]  # L1
+      axis_mappings:
+        duty_cycle:
+          button: 5  # R1
+          scale: 1.0
+          offset: 0.0
+
+    vacuum_motor:
+      type: topic
+      topic_name: vacuum_motor
+      interface_type: create_msgs/msg/MotorSetpoint
+      deadman_buttons: [4]  # L1
+      axis_mappings:
+        duty_cycle:
+          button: 5  # R1
+          scale: 1.0
+          offset: 0.0
