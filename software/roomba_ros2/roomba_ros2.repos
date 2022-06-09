@@ -1,0 +1,17 @@
+repositories:
+  create_robot:
+    type: git
+    url: https://github.com/AutonomyLab/create_robot.git
+    version: foxy
+  libcreate:
+    type: git
+    url: https://github.com/AutonomyLab/libcreate
+    version: master
+  roomba-ros2:
+    type: git
+    url: https://github.com/process1183/roomba-ros2.git
+    version: main
+  ros2_bno055:
+    type: git
+    url: https://github.com/process1183/ros2_bno055.git
+    version: main
